@@ -1,0 +1,62 @@
+/* Navbar */
+#bigHeader ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 1em;
+
+    padding: 0;
+    margin-block-start: 2em;
+    list-style-type: none;
+}
+
+#bigHeader li {
+    width: 7em;
+    border: 1px solid white;
+}
+
+#bigHeader a {
+    display: block;
+    padding-block: 0.5em;
+    text-align: center;
+}
+
+#bigHeader ul li:nth-child(3) a {
+    background-color: cadetblue;
+}
+
+/* Main body */
+img {
+    display: block;
+    width: 75%;
+    margin: 2vh auto;
+    object-fit: cover;
+}
+
+main p {
+    text-align: justify;
+    margin-block-end: 2.2em;
+}
+
+h2 {
+    text-align: center;
+}
+
+#contactInfo p {
+    text-align: center;
+}
+
+@media screen and (min-width: 730px) {
+    #bigHeader ul {
+        display: block;
+        margin: 0;
+    }
+
+    #bigHeader li {
+        margin: 1em auto;
+    }
+
+    img {
+        width: 100%;
+    }
+}
